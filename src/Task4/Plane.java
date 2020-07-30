@@ -6,6 +6,6 @@ class Plane extends Vehicle implements Flyable, Driveable{
         super(vehicle);
         this.plane = plane;
     }
-    public void fly(){System.out.println("Интерфейс Flyable - " + this.plane);}
-    public void drive() {System.out.println("Интерфейс Driveable - " + this.plane);}
+    public void fly(){System.out.println("Интерфейс Flyable (Plane) - " + this.plane);}
+    public void drive() {System.out.println("Интерфейс Driveable (Plane) - " + this.plane);}
 }

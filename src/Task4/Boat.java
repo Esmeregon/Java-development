@@ -7,7 +7,7 @@ class Boat extends Vehicle implements Swimable, Driveable{
         this.boat = boat;
     }
     public void swim(){
-        System.out.println("Интерфейс Flyable - " + this.boat);
+        System.out.println("Интерфейс Flyable (Boat) - " + this.boat);
     }
-    public void drive() {System.out.println("Интерфейс Driveable - " + this.boat); }
+    public void drive() {System.out.println("Интерфейс Driveable (Boat)  - " + this.boat); }
 }

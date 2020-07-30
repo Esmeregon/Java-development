@@ -7,6 +7,6 @@ class Train extends Vehicle implements Driveable{
         this.train = train;
     }
     public void drive(){
-        System.out.println("Интерфейс Driveable - " + this.train);
+        System.out.println("Интерфейс Driveable (Train) - " + this.train);
     }
 }
