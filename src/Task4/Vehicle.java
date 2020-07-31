@@ -1,8 +1,10 @@
 package Task4;
 
 class Vehicle {
-    String vehicle;
-    Vehicle (String vehicle) {
-        this.vehicle = vehicle;
+    public void acceleration(){
+        System.out.println("Ускорение");
+    }
+    public void braking(){
+        System.out.println("Торможение");
     }
 }

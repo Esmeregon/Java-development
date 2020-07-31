@@ -1,11 +1,40 @@
 package Task4;
 
 class Plane extends Vehicle implements Flyable, Driveable{
-    String plane;
-    Plane(String vehicle, String plane) {
-        super(vehicle);
-        this.plane = plane;
+
+    private String name;
+    private String color;
+
+    public Plane(String name, String color) {
+        this.name = name;
+        this.color = color;
     }
-    public void fly(){System.out.println("Интерфейс Flyable (Plane) - " + this.plane);}
-    public void drive() {System.out.println("Интерфейс Driveable (Plane) - " + this.plane);}
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public Plane(String name) {
+
+        this.name = name;
+    }
+
+    public void fly(){
+
+    }
+    public void drive() {
+
+    }
 }

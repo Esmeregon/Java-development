@@ -1,21 +1,41 @@
 package Task4;
 
 class Bike extends Vehicle implements Rideable, Driveable {
-    String bike;
+    private String name;
+    private String color;
 
-    Bike(String vehicle) {
-        super(vehicle);
+    public Bike(String name, String color) {
+        this.name = name;
+        this.color = color;
     }
 
-    public void setBike(String bike) {
-        this.bike = bike;
+    public Bike(String name) {
+        this.name = name;
     }
 
-    public String getBike() {
-        return bike;
+    public String getName() {
+        return name;
     }
 
-    public void ride(){System.out.println("Интерфейс Rideable (Bike) - " + this.bike);}
-    public void drive() {System.out.println("Интерфейс Driveable (Bike) - " + this.bike);}
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public void drive() {
+
+    }
+
+    @Override
+    public void ride() {
+
+    }
 }
